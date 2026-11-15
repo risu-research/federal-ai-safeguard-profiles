@@ -1,6 +1,6 @@
 # Federal AI safeguard response profiles
 
-Reproduction materials for *When Governments Report AI Safeguards: Organizational Patterns and the Specificity of Public Disclosure*, by Moon Hwan Lee (RISU Institute).
+Reproduction materials for *When Governments Report AI Safeguards: Organizational Patterns and the Specificity of Disclosure*, by Moon Hwan Lee (RISU Institute).
 
 The analysis covers 227 deployed, high-impact entries in the 2025 U.S. federal AI use-case inventory. Each entry contains eight reported safeguard responses. The code groups those responses into eight-field profiles and counts pairs of entries with matching profiles.
 

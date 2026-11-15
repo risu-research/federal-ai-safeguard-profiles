@@ -1,0 +1,21 @@
+name: Reproduce pinned OMB inventory analysis
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Offline matrix and codebook tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Download pinned official CSV and verify source bytes
+        run: python src/download_omb.py data/omb_original.csv
+      - name: Independently reclassify every original row
+        run: python src/audit_reproduction.py --csv data/omb_original.csv --output verification/ci_reproduction_report.json
+      - name: Recompute figures and tables
+        run: python src/analyze_distinguishability.py

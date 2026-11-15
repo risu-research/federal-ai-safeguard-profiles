@@ -1,0 +1,34 @@
+﻿source_csv_data_row_0based,agency,component,field,strict,broad
+33,DHS,CBP,hi_public_consultation,O,E
+34,DHS,CBP,hi_public_consultation,O,E
+36,DHS,CBP,hi_public_consultation,O,E
+37,DHS,CBP,hi_appeal_process,L,N
+37,DHS,CBP,hi_public_consultation,O,E
+38,DHS,CBP,hi_public_consultation,O,E
+46,DHS,CBP,hi_public_consultation,O,E
+48,DHS,CBP,hi_public_consultation,O,E
+49,DHS,CBP,hi_public_consultation,M,E
+50,DHS,CBP,hi_public_consultation,O,E
+51,DHS,CBP,hi_public_consultation,M,E
+52,DHS,CBP,hi_appeal_process,L,N
+52,DHS,CBP,hi_public_consultation,O,E
+140,DHS,ICE,hi_appeal_process,L,N
+141,DHS,ICE,hi_public_consultation,O,E
+142,DHS,ICE,hi_public_consultation,O,E
+143,DHS,ICE,hi_public_consultation,O,E
+144,DHS,ICE,hi_public_consultation,X,P
+145,DHS,ICE,hi_training_established,X,P
+146,DHS,ICE,hi_training_established,X,P
+147,DHS,ICE,hi_public_consultation,O,E
+222,DHS,USCIS,hi_public_consultation,M,E
+687,DOE,ORNL - Oak Ridge National Laboratory (SC43 OIM),hi_public_consultation,O,E
+689,DOE,ORNL - Oak Ridge National Laboratory (SC43 OIM),hi_public_consultation,O,E
+1399,DOL,OSHA,hi_public_consultation,X,E
+2812,SSA,"Chief Information Officer, Analytics and Improvements",hi_public_consultation,O,E
+2813,SSA,"Chief Information Officer, Analytics and Improvements",hi_public_consultation,O,E
+2814,SSA,"Chief Information Officer, Analytics and Improvements",hi_public_consultation,O,E
+2815,SSA,"Chief Information Officer, Analytics and Improvements",hi_public_consultation,O,E
+2821,SSA,"Chief Information Officer, Digital Customer Solutions",hi_appeal_process,L,N
+2823,SSA,"Chief Information Officer, Disability Information Systems",hi_public_consultation,O,E
+2831,SSA,"Law and Policy, Disability Policy",hi_public_consultation,O,E
+3211,USDA,"Office of Safety, Security, and Protection",hi_public_consultation,O,E

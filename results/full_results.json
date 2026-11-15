@@ -1,0 +1,308 @@
+{
+  "cohort": {
+    "source": "V4 status-only derived OMB classification, pinned commit 3c225ba8438e48306ace7698c8c7feb9486cbc69",
+    "original_csv_bytes_reproduced_this_round": false,
+    "row_count": 227,
+    "field_count": 8,
+    "agency_count": 12,
+    "unit": "reported inventory row, not independent physical AI deployment"
+  },
+  "coding": "strict preserves E,P,U,N,L,O,M,X; broad coarsens some distinct responses",
+  "groups": {
+    "all_227": {
+      "strict_vector": {
+        "metrics": {
+          "n": 227,
+          "unique_profiles": 27,
+          "singleton_profiles": 16,
+          "singleton_rows": 16,
+          "rows_in_repeated_profiles": 211,
+          "rows_in_repeated_profiles_pct": 92.95154185022027,
+          "modal_profile": "UUUUUUUU",
+          "modal_n": 101,
+          "modal_pct": 44.49339207048458,
+          "pairs": 25651,
+          "identical_pairs": 7903,
+          "pair_collision_pct": 30.80971502085689,
+          "shannon_entropy_bits": 2.4634153970400643,
+          "effective_profiles_2_to_H": 5.5152083843557875
+        },
+        "pair_breakdown": {
+          "same_component": {
+            "identical_pairs": 3697,
+            "total_pairs": 3907,
+            "pair_collision_pct": 94.62503199385718
+          },
+          "different_component_same_agency": {
+            "identical_pairs": 3371,
+            "total_pairs": 3835,
+            "pair_collision_pct": 87.90091264667537
+          },
+          "different_agency": {
+            "identical_pairs": 835,
+            "total_pairs": 17909,
+            "pair_collision_pct": 4.662460215534089
+          }
+        }
+      },
+      "broad_vector": {
+        "metrics": {
+          "n": 227,
+          "unique_profiles": 17,
+          "singleton_profiles": 8,
+          "singleton_rows": 8,
+          "rows_in_repeated_profiles": 219,
+          "rows_in_repeated_profiles_pct": 96.47577092511013,
+          "modal_profile": "UUUUUUUU",
+          "modal_n": 101,
+          "modal_pct": 44.49339207048458,
+          "pairs": 25651,
+          "identical_pairs": 8266,
+          "pair_collision_pct": 32.22486452769873,
+          "shannon_entropy_bits": 2.156676257955886,
+          "effective_profiles_2_to_H": 4.458864189566943
+        },
+        "pair_breakdown": {
+          "same_component": {
+            "identical_pairs": 3754,
+            "total_pairs": 3907,
+            "pair_collision_pct": 96.0839518812388
+          },
+          "different_component_same_agency": {
+            "identical_pairs": 3404,
+            "total_pairs": 3835,
+            "pair_collision_pct": 88.76140808344198
+          },
+          "different_agency": {
+            "identical_pairs": 1108,
+            "total_pairs": 17909,
+            "pair_collision_pct": 6.186833435702719
+          }
+        }
+      }
+    },
+    "excluding_VA_DOJ_60": {
+      "strict_vector": {
+        "metrics": {
+          "n": 60,
+          "unique_profiles": 27,
+          "singleton_profiles": 16,
+          "singleton_rows": 16,
+          "rows_in_repeated_profiles": 44,
+          "rows_in_repeated_profiles_pct": 73.33333333333333,
+          "modal_profile": "EEEEEENE",
+          "modal_n": 9,
+          "modal_pct": 15.0,
+          "pairs": 1770,
+          "identical_pairs": 100,
+          "pair_collision_pct": 5.649717514124294,
+          "shannon_entropy_bits": 4.249525022338117,
+          "effective_profiles_2_to_H": 19.02105051949882
+        },
+        "pair_breakdown": {
+          "same_component": {
+            "identical_pairs": 39,
+            "total_pairs": 249,
+            "pair_collision_pct": 15.662650602409638
+          },
+          "different_component_same_agency": {
+            "identical_pairs": 30,
+            "total_pairs": 494,
+            "pair_collision_pct": 6.0728744939271255
+          },
+          "different_agency": {
+            "identical_pairs": 31,
+            "total_pairs": 1027,
+            "pair_collision_pct": 3.0185004868549172
+          }
+        }
+      },
+      "broad_vector": {
+        "metrics": {
+          "n": 60,
+          "unique_profiles": 17,
+          "singleton_profiles": 8,
+          "singleton_rows": 8,
+          "rows_in_repeated_profiles": 52,
+          "rows_in_repeated_profiles_pct": 86.66666666666667,
+          "modal_profile": "EEEEEENE",
+          "modal_n": 19,
+          "modal_pct": 31.666666666666668,
+          "pairs": 1770,
+          "identical_pairs": 244,
+          "pair_collision_pct": 13.785310734463277,
+          "shannon_entropy_bits": 3.313867459630102,
+          "effective_profiles_2_to_H": 9.94428372808083
+        },
+        "pair_breakdown": {
+          "same_component": {
+            "identical_pairs": 96,
+            "total_pairs": 249,
+            "pair_collision_pct": 38.55421686746988
+          },
+          "different_component_same_agency": {
+            "identical_pairs": 63,
+            "total_pairs": 494,
+            "pair_collision_pct": 12.753036437246964
+          },
+          "different_agency": {
+            "identical_pairs": 85,
+            "total_pairs": 1027,
+            "pair_collision_pct": 8.276533592989288
+          }
+        }
+      }
+    },
+    "DHS_only_38": {
+      "strict_vector": {
+        "metrics": {
+          "n": 38,
+          "unique_profiles": 17,
+          "singleton_profiles": 9,
+          "singleton_rows": 9,
+          "rows_in_repeated_profiles": 29,
+          "rows_in_repeated_profiles_pct": 76.3157894736842,
+          "modal_profile": "EEEEEENE",
+          "modal_n": 8,
+          "modal_pct": 21.05263157894737,
+          "pairs": 703,
+          "identical_pairs": 54,
+          "pair_collision_pct": 7.681365576102418,
+          "shannon_entropy_bits": 3.679252764116301,
+          "effective_profiles_2_to_H": 12.81048120523527
+        },
+        "pair_breakdown": {
+          "same_component": {
+            "identical_pairs": 27,
+            "total_pairs": 231,
+            "pair_collision_pct": 11.688311688311689
+          },
+          "different_component_same_agency": {
+            "identical_pairs": 27,
+            "total_pairs": 472,
+            "pair_collision_pct": 5.720338983050848
+          },
+          "different_agency": {
+            "identical_pairs": 0,
+            "total_pairs": 0,
+            "pair_collision_pct": null
+          }
+        }
+      },
+      "broad_vector": {
+        "metrics": {
+          "n": 38,
+          "unique_profiles": 10,
+          "singleton_profiles": 5,
+          "singleton_rows": 5,
+          "rows_in_repeated_profiles": 33,
+          "rows_in_repeated_profiles_pct": 86.84210526315789,
+          "modal_profile": "EEEEEENE",
+          "modal_n": 15,
+          "modal_pct": 39.473684210526315,
+          "pairs": 703,
+          "identical_pairs": 141,
+          "pair_collision_pct": 20.056899004267425,
+          "shannon_entropy_bits": 2.6339165953559975,
+          "effective_profiles_2_to_H": 6.207087981556007
+        },
+        "pair_breakdown": {
+          "same_component": {
+            "identical_pairs": 83,
+            "total_pairs": 231,
+            "pair_collision_pct": 35.93073593073593
+          },
+          "different_component_same_agency": {
+            "identical_pairs": 58,
+            "total_pairs": 472,
+            "pair_collision_pct": 12.288135593220339
+          },
+          "different_agency": {
+            "identical_pairs": 0,
+            "total_pairs": 0,
+            "pair_collision_pct": null
+          }
+        }
+      }
+    },
+    "excluding_VA_DOJ_NCUA_55": {
+      "strict_vector": {
+        "metrics": {
+          "n": 55,
+          "unique_profiles": 27,
+          "singleton_profiles": 16,
+          "singleton_rows": 16,
+          "rows_in_repeated_profiles": 39,
+          "rows_in_repeated_profiles_pct": 70.9090909090909,
+          "modal_profile": "EEEEEENE",
+          "modal_n": 9,
+          "modal_pct": 16.363636363636363,
+          "pairs": 1485,
+          "identical_pairs": 80,
+          "pair_collision_pct": 5.3872053872053876,
+          "shannon_entropy_bits": 4.294260623673371,
+          "effective_profiles_2_to_H": 19.620101823190073
+        },
+        "pair_breakdown": {
+          "same_component": {
+            "identical_pairs": 29,
+            "total_pairs": 239,
+            "pair_collision_pct": 12.133891213389122
+          },
+          "different_component_same_agency": {
+            "identical_pairs": 30,
+            "total_pairs": 494,
+            "pair_collision_pct": 6.0728744939271255
+          },
+          "different_agency": {
+            "identical_pairs": 21,
+            "total_pairs": 752,
+            "pair_collision_pct": 2.7925531914893615
+          }
+        }
+      },
+      "broad_vector": {
+        "metrics": {
+          "n": 55,
+          "unique_profiles": 17,
+          "singleton_profiles": 8,
+          "singleton_rows": 8,
+          "rows_in_repeated_profiles": 47,
+          "rows_in_repeated_profiles_pct": 85.45454545454545,
+          "modal_profile": "EEEEEENE",
+          "modal_n": 19,
+          "modal_pct": 34.54545454545455,
+          "pairs": 1485,
+          "identical_pairs": 224,
+          "pair_collision_pct": 15.084175084175085,
+          "shannon_entropy_bits": 3.273543282537355,
+          "effective_profiles_2_to_H": 9.670183608610289
+        },
+        "pair_breakdown": {
+          "same_component": {
+            "identical_pairs": 86,
+            "total_pairs": 239,
+            "pair_collision_pct": 35.98326359832636
+          },
+          "different_component_same_agency": {
+            "identical_pairs": 63,
+            "total_pairs": 494,
+            "pair_collision_pct": 12.753036437246964
+          },
+          "different_agency": {
+            "identical_pairs": 75,
+            "total_pairs": 752,
+            "pair_collision_pct": 9.97340425531915
+          }
+        }
+      }
+    }
+  },
+  "dominant_agency_decomposition": {
+    "VA_within_agency_identical_pairs": 4371,
+    "DOJ_within_agency_identical_pairs": 2628,
+    "combined_identical_pairs": 6999,
+    "share_of_all_7903_identical_pairs_pct": 88.56130583322789,
+    "share_of_same_agency_identical_pairs_pct": 99.02376910016977
+  }
+}

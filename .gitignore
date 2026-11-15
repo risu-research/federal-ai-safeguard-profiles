@@ -1,0 +1,8 @@
+# Original inventory is downloaded from the pinned official source
+data/omb_original.csv
+results/raw_reproduction.json
+results/full_raw_reproduction.json
+verification/ci_reproduction_report.json
+__pycache__/
+*.pyc
+.DS_Store

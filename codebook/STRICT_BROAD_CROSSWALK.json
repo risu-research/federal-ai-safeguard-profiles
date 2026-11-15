@@ -1,0 +1,115 @@
+{
+  "source": "Executable rules in src/replicate_omb_original.py (this JSON is a human-readable crosswalk, not separate executable logic)",
+  "field_order": [
+    "hi_testing_conducted",
+    "hi_assessment_completed",
+    "hi_independent_review",
+    "hi_ongoing_monitoring",
+    "hi_training_established",
+    "hi_failsafe_presence",
+    "hi_appeal_process",
+    "hi_public_consultation"
+  ],
+  "units": "Each reported inventory row, not independent physical AI deployments",
+  "selection": {
+    "development_stage": "Deployed",
+    "is_high_impact": "High-impact"
+  },
+  "code_meanings": {
+    "E": "Affirmative/established/completed claim",
+    "P": "In progress",
+    "U": "Blank or []",
+    "N": "Not applicable",
+    "L": "Appeal Precluded by Law shorthand; official option covers law, operational limitations or governmentwide guidance",
+    "O": "Consultation only Other, no substantive detail",
+    "M": "Consultation list with multiple code types",
+    "X": "Unexpected/other-question answer",
+    "W": "CAIO Waived (defined in code, not observed in selected 227 rows)"
+  },
+  "strict": {
+    "blank_or_empty_list": "U",
+    "field_maps": {
+      "hi_testing_conducted": {
+        "Yes": "E",
+        "In-progress": "P",
+        "CAIO Waived": "W"
+      },
+      "hi_assessment_completed": {
+        "Yes": "E",
+        "In-progress": "P",
+        "CAIO Waived": "W"
+      },
+      "hi_independent_review": {
+        "CAIO Review": "E",
+        "Internal Independent Review": "E",
+        "Oversight Board Review": "E",
+        "In-progress": "P",
+        "CAIO Waived": "W"
+      },
+      "hi_ongoing_monitoring": {
+        "Yes - Monitoring Established": "E",
+        "In-progress": "P",
+        "CAIO Waived": "W"
+      },
+      "hi_training_established": {
+        "Training Established": "E",
+        "Training In-progress": "P",
+        "CAIO Waived": "W"
+      },
+      "hi_failsafe_presence": {
+        "Yes": "E",
+        "In-progress": "P",
+        "Not Applicable": "N",
+        "CAIO Waived": "W"
+      },
+      "hi_appeal_process": {
+        "Appeal Process Established": "E",
+        "Appeal Process In-progress": "P",
+        "Not Applicable": "N",
+        "Appeal Precluded by Law": "L",
+        "CAIO Waived": "W"
+      }
+    },
+    "consultation_choice_map": {
+      "Other": "O",
+      "Usability Testing": "E",
+      "Public Feedback Solicitations": "E",
+      "Public Hearings": "E",
+      "In-progress": "P",
+      "CAIO Waived": "W",
+      "a) Direct usability testing": "E",
+      "b) General solicitations of feedback and comments from the public": "E",
+      "c) Public hearings or meetings": "E",
+      "d) Other": "O",
+      "e) In-progress": "P"
+    },
+    "consultation": "Use Python ast.literal_eval, map list elements to codes; U empty; X unknown/invalid; M if different codes occur; otherwise single code",
+    "unexpected_field_value": "X"
+  },
+  "broad": {
+    "ordered_conditions": [
+      {
+        "if": "whitespace-trimmed raw value empty or []",
+        "code": "U"
+      },
+      {
+        "if": "contains Not Applicable OR Precluded by Law (any field)",
+        "code": "N"
+      },
+      {
+        "if": "case-insensitive contains in-progress OR in-progess",
+        "code": "P"
+      },
+      {
+        "if": "starts with Yes, CAIO Review, Internal Independent Review, Oversight Board Review, Training Established, Appeal Process Established or ['",
+        "code": "E"
+      },
+      {
+        "else": "X"
+      }
+    ],
+    "note": "Broad uses generic text matching and does not establish the answer is appropriate to the question. Some X/M values can become P/E. No per-row manual overrides."
+  },
+  "comparison": "Two rows match iff eight code characters are equal (same field order). Counts use n*(n-1)//2 unordered pairs; proportions use N*(N-1)//2.",
+  "audit_note": "Strict groups different positive consultation and review options into E, and all mixed consultation status types into M. Original raw distinctions remain in official CSV."
+}

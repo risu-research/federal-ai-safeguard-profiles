@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the research artifact and the OMB source inventory."
+title: "Federal AI Safeguard Response Profiles Reproduction Artifact"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Moon Hwan
+version: 1.0.0
+date-released: 2026-11-15
+repository-code: https://github.com/risu-research/federal-ai-safeguard-profiles
+keywords:
+  - federal AI inventory
+  - public sector AI
+  - transparency
+  - reproducibility
